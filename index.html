@@ -15,6 +15,77 @@
 
     <style>
 
+body {
+            font-family: 'Roboto', sans-serif;
+            
+           
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #6B21A8;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            color: #6B7280;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        .card {
+            text-align: center;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #6B21A8;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .card h2 {
+            color: #6B21A8;
+            font-size: 1.25rem;
+            margin-top: 15px;
+        }
+        .card p {
+            color: #6B7280;
+            margin-top: 10px;
+        }
+
 .btn-custom {
     background-color: #007bff;
     color: white;
@@ -169,7 +240,7 @@
 
        /* Navbar transparente */
   .navbar.bg-dark {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(24, 23, 23, 0.9) !important;
     transition: background-color 0.3s ease;
   }
 
@@ -347,6 +418,30 @@
   </div>
 </div>
 
+<div class="container">
+  <h1>Os Stands modelados pela RakeStudio são modernos e agradaveis. </h1>
+  <p>Somos uma empresa especializada e profissional. </p>
+  <div class="grid">
+      <div class="card">
+          <div class="card-number">1</div>
+          <img src="./carousel/Images/slides/SlideCards/ftd01.jpg" alt="Médico cuidando de um paciente">
+          <h2>FTD Educação</h2>
+          <p>A FTD Educação é uma empresa que permite os estudantes terem acesso a ferramentas inovadoras e acompanhamento necessário , veja o Stand feito pela RakeStudio Da FTD .</p>
+      </div>
+      <div class="card">
+          <div class="card-number">2</div>
+          <img src="./carousel/Images/slides/SlideCards/Vortex01.jpg" alt="Criança sendo atendida por um médico">
+          <h2>Vortex Editora</h2>
+          <p>Oferecendo soluções de ensino com foco em inovação e tecnologia , a Vortex Educação tambem requisitou nossos serviços . </p>
+      </div>
+      <div class="card">
+          <div class="card-number">3</div>
+          <img src="./carousel/Images/slides/SlideCards/SOLVENTUM01.jpg" alt="Consulta médica online">
+          <h2>Solventum</h2>
+          <p>Solventum, uma empresa de saúde construída a partir de um legado de inovação e dedicada a promover cuidados de saúde mais eficazes, inteligentes e seguros. Veja o stand da Solventum acima:</p>
+      </div>
+  </div>
+</div>
 
 
 
@@ -360,7 +455,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Criação de Stands para seu projeto. <span class="text-body-secondary">Entre em contato para um orçamento.</span></h2>
-        <p class="lead">--------------------------------------------</p>
+        <p class="lead">   </p>
       </div>
       <div class="col-md-5">
         <img src="./carousel/Images/slides/marata.jpg" 
@@ -375,7 +470,7 @@
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Modelagem Clean e Moderna. <span class="text-body-secondary">Veja por você mesmo.</span></h2>
-        <p class="lead">-----------------------------------------------------</p>
+        <p class="lead">   </p>
       </div>
       <div class="col-md-5 order-md-1">
 <img src="./carousel/Images/slides/c.jpg" 
@@ -427,7 +522,7 @@
 
   </div>
   <div style="text-align: center;">
-    <button id="changeModel" class="btn btn-primary mt-3" style="width: 200px; height: 55px;">Ver outro modelo de STAND</button>
+    <button id="changeModel" class="btn btn-primary mt-3" style="width: 200px; height: 55px; background-color: #712cf9; color: #ffffff;">Ver outro modelo de STAND</button>
   </div>
   
 
